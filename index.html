@@ -37,7 +37,10 @@
     </script>
 
     <style>
-        html {
+        /* FIX MOBILE: Kunci maksimal lebar 100% dan sembunyikan overflow horizontal di level root */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
             scroll-behavior: smooth;
         }
         
@@ -417,7 +420,8 @@
     </section>
 
     <!-- SECTION 5: BUSINESS PROJECTION -->
-    <section id="paket" class="py-16 md:py-20 bg-brand-light/30 border-t border-brand-blue/5">
+    <!-- FIX MOBILE: Tambah overflow-hidden agar blob hijau tidak melebar keluar layar -->
+    <section id="paket" class="py-16 md:py-20 bg-brand-light/30 border-t border-brand-blue/5 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="w-full lg:w-5/12">
@@ -496,7 +500,8 @@
     </section>
 
     <!-- SECTION 6: PAKET USAHA -->
-    <section class="py-16 md:py-20 bg-white font-sans" id="paket-usaha">
+    <!-- FIX MOBILE: Tambah overflow-hidden untuk keamanan layout -->
+    <section class="py-16 md:py-20 bg-white font-sans overflow-hidden" id="paket-usaha">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                 <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Paket Rekomendasi</h2>
@@ -774,8 +779,8 @@
     </section>
 
     <!-- SECTION 8: FAQ -->
-    <!-- FIX MOBILE: Mengurangi padding vertikal (pt-12 pb-8) agar lebih merapat dengan section di bawahnya di layar HP -->
-    <section class="pt-12 pb-8 md:py-20 bg-white">
+    <!-- FIX MOBILE: Tambah overflow-hidden -->
+    <section class="pt-12 pb-8 md:py-20 bg-white overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-12">
                 <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Tanya Jawab</h2>
@@ -860,7 +865,8 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800 font-sans">
+    <!-- FIX MOBILE: Tambah overflow-hidden -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800 font-sans overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 
