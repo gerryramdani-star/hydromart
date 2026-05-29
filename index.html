@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome untuk Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -90,20 +90,22 @@
         </div>
 
         <!-- Content Container -->
-        <!-- FIX MOBILE: Mengubah pb-24 menjadi pb-40 untuk memberi ruang bagi wave svg dan konten HP -->
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 md:pt-40 md:pb-32 flex flex-col md:flex-row items-center">
+        <!-- FIX MOBILE: pt-32 diubah ke pt-28 agar gap dengan navbar tidak terlalu jauh di HP -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-40 md:pt-40 md:pb-32 flex flex-col md:flex-row items-center">
             
             <!-- Left Side: Copywriting -->
             <div class="w-full md:w-2/3 text-center md:text-left">
                 
-                <div class="inline-flex items-center px-4 py-1.5 mb-6 rounded-full bg-blue-900/50 border border-blue-400/30 backdrop-blur-sm">
+                <!-- FIX MOBILE: mb-6 diubah ke mb-4 untuk layar HP agar lebih padat -->
+                <div class="inline-flex items-center px-4 py-1.5 mb-4 md:mb-6 rounded-full bg-blue-900/50 border border-blue-400/30 backdrop-blur-sm">
                     <span class="text-blue-200 font-semibold text-xs md:text-sm tracking-wide uppercase flex items-center">
                         <i class="fas fa-check-circle mr-2 text-brand-accent"></i>
                         Peluang Usaha Anti Krisis
                     </span>
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+                <!-- FIX MOBILE: text-3xl diubah ke text-[28px] leading-[1.25] agar proporsional dan tidak memakan terlalu banyak baris -->
+                <h1 class="text-[28px] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.25] mb-4 md:mb-6 drop-shadow-lg">
                     Bisnis Depot Air Minum <br class="hidden md:block"/>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">
                         Pertama & Satu-Satunya
@@ -111,37 +113,39 @@
                     yang Halal & Higienis
                 </h1>
                 
-                <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed font-light opacity-90">
+                <!-- FIX MOBILE: Teks deskripsi dikecilkan menjadi text-sm di mobile, mb-8 jadi mb-6 -->
+                <p class="text-sm sm:text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed font-light opacity-90">
                     Miliki bisnis kebutuhan pokok dengan sistem teruji >25 tahun. Peralatan hak milik <strong>(Tanpa Royalty Fee)</strong> dan potensi <em>Passive Income</em> hingga puluhan juta rupiah.
                 </p>
 
                 <!-- Call to Action Buttons -->
-                <!-- FIX MOBILE: Tambah max-w-sm mx-auto di mobile agar tombol proporsional -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full max-w-sm mx-auto sm:max-w-none sm:mx-0">
+                <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start w-full max-w-sm mx-auto sm:max-w-none sm:mx-0">
+                    <!-- FIX MOBILE: Padding tombol dan ukuran font disesuaikan agar tidak over-size -->
                     <a href="https://wa.me/6281110014716?text=Halo%20Armelia,%20saya%20tertarik%20menjadi%20mitra%20Hydromart." 
                        target="_blank"
-                       class="track-wa-btn group bg-[#4ade80] hover:bg-[#22c55e] text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(74,222,128,0.4)] flex justify-center items-center">
-                        <i class="fab fa-whatsapp mr-2 text-2xl group-hover:scale-110 transition-transform"></i>
+                       class="track-wa-btn group bg-[#4ade80] hover:bg-[#22c55e] text-white font-bold text-base md:text-lg py-3.5 px-6 md:py-4 md:px-8 rounded-full shadow-lg transform transition duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(74,222,128,0.4)] flex justify-center items-center">
+                        <i class="fab fa-whatsapp mr-2 text-xl md:text-2xl group-hover:scale-110 transition-transform"></i>
                         <span>Konsultasi Gratis</span>
                     </a>
                     
-                    <a href="#video-outlet" class="group bg-white/5 hover:bg-white/10 text-white border border-white/30 font-semibold py-4 px-8 rounded-full backdrop-blur-sm transition duration-300 flex items-center justify-center">
-                        <i class="fas fa-play-circle mr-2 text-xl group-hover:text-brand-accent transition-colors"></i> Lihat Video Outlet
+                    <a href="#video-outlet" class="group bg-white/5 hover:bg-white/10 text-white border border-white/30 font-semibold text-base md:text-lg py-3.5 px-6 md:py-4 md:px-8 rounded-full backdrop-blur-sm transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2 text-lg md:text-xl group-hover:text-brand-accent transition-colors"></i> Lihat Video Outlet
                     </a>
                 </div>
 
-                <!-- FIX MOBILE: Grid disesuaikan, tambah px-1 dan <br> spesifik HP agar rapi tidak numpuk -->
-                <div class="mt-10 md:mt-12 grid grid-cols-3 gap-2 sm:gap-4 border-t border-white/10 pt-6 md:pt-8">
+                <!-- Trust Badges (Icon + Text) -->
+                <!-- FIX MOBILE: mt-10 diubah menjadi mt-8 agar lebih merapat dengan tombol CTA di atasnya -->
+                <div class="mt-8 md:mt-12 grid grid-cols-3 gap-2 sm:gap-4 border-t border-white/10 pt-6 md:pt-8">
                     <div class="flex flex-col items-center md:items-start text-center md:text-left px-1">
-                        <i class="fas fa-certificate text-brand-accent text-3xl md:text-2xl mb-2"></i>
+                        <i class="fas fa-certificate text-brand-accent text-[28px] md:text-2xl mb-2"></i>
                         <span class="text-white text-xs sm:text-sm font-medium leading-tight">100%<br class="md:hidden"/> Halal</span>
                     </div>
                     <div class="flex flex-col items-center md:items-start text-center md:text-left px-1">
-                        <i class="fas fa-cogs text-brand-accent text-3xl md:text-2xl mb-2"></i>
+                        <i class="fas fa-cogs text-brand-accent text-[28px] md:text-2xl mb-2"></i>
                         <span class="text-white text-xs sm:text-sm font-medium leading-tight">Teknologi<br class="md:hidden"/> Pabrikan</span>
                     </div>
                     <div class="flex flex-col items-center md:items-start text-center md:text-left px-1">
-                        <i class="fas fa-hand-holding-usd text-brand-accent text-3xl md:text-2xl mb-2"></i>
+                        <i class="fas fa-hand-holding-usd text-brand-accent text-[28px] md:text-2xl mb-2"></i>
                         <span class="text-white text-xs sm:text-sm font-medium leading-tight">Tanpa Bagi<br class="md:hidden"/> Hasil</span>
                     </div>
                 </div>
