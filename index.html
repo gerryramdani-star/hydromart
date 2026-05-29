@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydromart Franchise - Peluang Bisnis Air Minum</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Konfigurasi Custom Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0056b3', 
+                            light: '#e6f0ff',
+                            dark: '#003d80',
+                            accent: '#f59e0b', 
+                            accentHover: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Area -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/gerryramdani-star/nextool/refs/heads/main/asset/logo-hydromart-(1).png" alt="Logo Hydromart" class="object-contain" style="height: 45px !important; width: auto !important; max-width: 250px !important; margin: 0;">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#keunggulan" class="text-gray-600 hover:text-brand-blue px-3 py-2 text-sm font-medium transition">Keunggulan</a>
+                    <a href="#paket" class="text-gray-600 hover:text-brand-blue px-3 py-2 text-sm font-medium transition">Paket Usaha</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-brand-blue hover:text-brand-dark focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <!-- Perbaikan: Menggunakan min-h-screen agar bisa memanjang jika konten banyak, bukan h-screen mati -->
+    <header class="relative bg-brand-dark min-h-screen flex items-center justify-center overflow-hidden">
+        
+        <!-- Background Image dengan Overlay -->
+        <div class="absolute inset-0 z-0">
+            <!-- Gambar Background -->
+            <img src="https://ads.hydro.co.id/wp-content/uploads/2026/02/foto-hydromart-1.jpg" 
+                 alt="Hydromart Clean Water" 
+                 class="w-full h-full object-cover opacity-50">
+            
+            <!-- Gradient Overlay: Lebih gelap di kiri agar teks putih terbaca jelas -->
+            <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/30"></div>
+        </div>
+
+        <!-- Content Container -->
+        <!-- Perbaikan: Padding top (pt) ditambah agar tidak ketabrak navbar -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col md:flex-row items-center">
+            
+            <!-- Left Side: Copywriting -->
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                
+                <!-- Badge / Tagline -->
+                <div class="inline-flex items-center px-4 py-1.5 mb-6 rounded-full bg-blue-900/50 border border-blue-400/30 backdrop-blur-sm">
+                    <span class="text-blue-200 font-semibold text-xs md:text-sm tracking-wide uppercase flex items-center">
+                        <i class="fas fa-check-circle mr-2 text-brand-accent"></i>
+                        Peluang Usaha Anti Krisis
+                    </span>
+                </div>
+
+                <!-- Headline Utama -->
+                <!-- Perbaikan: Ukuran font responsif (text-3xl di mobile, text-5xl di desktop) -->
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+                    Bisnis Depot Air Minum <br class="hidden md:block"/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">
+                        Pertama & Satu-Satunya
+                    </span> <br class="hidden md:block"/>
+                    yang Halal & Higienis
+                </h1>
+                
+                <!-- Sub-Headline -->
+                <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed font-light opacity-90">
+                    Miliki bisnis kebutuhan pokok dengan sistem teruji >25 tahun. Peralatan hak milik <strong>(Tanpa Royalty Fee)</strong> dan potensi <em>Passive Income</em> hingga puluhan juta rupiah.
+                </p>
+
+                <!-- Call to Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <!-- Primary CTA (WhatsApp) -->
+                    <!-- Ganti nomor HP di href -->
+                    <a href="https://wa.me/6281110014716?text=Halo%20Armelia,%20saya%20tertarik%20menjadi%20mitra%20Hydromart." 
+                       target="_blank"
+                       class="track-wa-btn group bg-[#4ade80]  hover:bg-[#22c55e] Hover text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(74,222,128,0.4)]>
+                        <i class="fab fa-whatsapp mr-2 text-2xl group-hover:scale-110 transition-transform"></i>
+                        <span>Konsultasi Gratis</span>
+                    </a>
+                    
+                    <!-- Secondary CTA -->
+                    <a href="#video-outlet" class="group bg-white/5 hover:bg-white/10 text-white border border-white/30 font-semibold py-4 px-8 rounded-full backdrop-blur-sm transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2 text-xl group-hover:text-brand-accent transition-colors"></i> Lihat Video Outlet
+                    </a>
+                </div>
+
+                <!-- Trust Badges (Icon + Text) -->
+                <div class="mt-12 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <i class="fas fa-certificate text-brand-accent text-2xl mb-2"></i>
+                        <span class="text-white text-sm font-medium">100% Halal</span>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <i class="fas fa-cogs text-brand-accent text-2xl mb-2"></i>
+                        <span class="text-white text-sm font-medium">Teknologi Pabrikan</span>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <i class="fas fa-hand-holding-usd text-brand-accent text-2xl mb-2"></i>
+                        <span class="text-white text-sm font-medium">Tanpa Bagi Hasil</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side: Space for Image/Visual Balance -->
+            <!-- Bisa diisi gambar produk jika ada, dibiarkan kosong untuk balance background -->
+            <div class="hidden md:block w-1/3"></div>
+            
+        </div>
+        
+        <!-- Wave Separator -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none">
+            <svg class="relative block w-full h-[40px] md:h-[80px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white transform rotate-180 origin-center"></path>
+            </svg>
+        </div>
+    </header>    
+</body>
+</html>
+<!-- START OF SECTION 2 CODE -->
+    <section class="py-20 md:py-28 bg-white overflow-hidden relative">
+        <!-- Dekorasi Background (Dots Pattern) -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 opacity-10">
+            <svg class="w-full h-full text-brand-blue fill-current" viewBox="0 0 100 100">
+                <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="2"></circle>
+                </pattern>
+                <rect width="100" height="100" fill="url(#dots)"></rect>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- KOLOM KIRI: Visual/Gambar -->
+                <div class="w-full md:w-1/2 relative group">
+                    <!-- Image Container dengan efek shadow dan border radius -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://ads.hydro.co.id/wp-content/uploads/2026/02/hydromart-jatiasih-samping.jpg" 
+                             alt="Air Minum Sehat Keluarga" 
+                             class="w-full h-[400px] md:h-[500px] object-cover transform transition duration-700 group-hover:scale-105">
+                        
+                        <!-- Overlay Text (Statistik Singkat) -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-blue">
+                            <p class="text-brand-dark font-bold text-lg">📈 Fakta Pasar:</p>
+                            <p class="text-gray-600 text-sm">Permintaan air minum tumbuh <span class="text-brand-blue font-bold">>5% per tahun</span> seiring kesadaran hidup sehat.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Dekorasi lingkaran di belakang gambar -->
+                    <div class="absolute -z-10 top-10 -left-10 w-40 h-40 bg-brand-light rounded-full blur-2xl opacity-70"></div>
+                </div>
+
+                <!-- KOLOM KANAN: Copywriting (Problem & Pain Points) -->
+                <div class="w-full md:w-1/2">
+                    
+                    <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-2">Market Insight</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        Mengapa Bisnis <span class="text-brand-blue">Air Minum?</span>
+                    </h3>
+
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Air minum adalah kebutuhan pokok manusia yang tidak bisa ditunda. Namun, masyarakat kini semakin kritis. Mereka tidak hanya cari murah, tapi cari yang <span class="font-bold text-gray-800">SEHAT, AMAN, dan JELAS ASAL-USULNYA.</span>
+                    </p>
+
+                    <!-- Problem List Card -->
+                    <div class="bg-red-50/50 border border-red-100 rounded-xl p-6 mb-8">
+                        <p class="font-semibold text-gray-800 mb-4 border-b border-red-200 pb-2">Masalah pada Depot Air Minum Biasa:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700">Kualitas air sering <strong>tidak stabil</strong> & berbau.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700">Filter jarang diganti & perawatan minim.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700">Tidak memiliki standar <strong>Halal & Higienis</strong> tersertifikasi.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Solution Statement (Transition) -->
+                    <div class="relative bg-brand-dark text-white p-6 rounded-xl shadow-lg transform translate-x-0 transition hover:-translate-y-1">
+                        <div class="absolute -top-3 -right-3 bg-brand-accent text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h4 class="text-2xl text-white font-bold mb-2 flex items-center">
+                            <i class="fas fa-shield-alt text-brand-accent mr-2"></i> Solusi Hydromart
+                        </h4>
+                        <p class="text-blue-100 text-sm md:text-base mb-4">
+                            Kami bukan sekadar depot kami adalah <strong>pusat air minum sehat</strong> dengan standar industri manufaktur.
+                        </p>
+                        
+                        <!-- NEW BUTTON ADDED HERE -->
+                        <a href="#" class="inline-flex items-center text-sm font-semibold text-brand-accent hover:text-white transition-colors group">
+                            Lihat Teknologi Kami 
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION 2 CODE -->
+
+    <!-- START OF SECTION 3 CODE -->
+    <!-- Background gray-50 untuk membedakan dengan section sebelumnya -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div id="keunggulan" class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Unique Selling Proposition</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                    Kenapa Investor Memilih <span class="text-brand-blue">HYDROMART?</span>
+                </h3>
+                <div class="w-24 h-1 bg-brand-blue mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1: Legalitas -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-brand-blue group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue transition duration-300">
+                        <i class="fas fa-file-contract text-brand-blue text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Legalitas & Sertifikasi</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Aman berusaha dengan Waralaba terdaftar (WI-0016416-737), Halal MUI, dan ISO 9001:2015.
+                    </p>
+                    <!-- Logo Placeholder Area -->
+                    <div class="flex gap-2 opacity-60 grayscale hover:grayscale-0 transition">
+                        <!-- Ganti src dengan logo Halal/ISO asli nantinya -->
+                        <div class="h-8 w-8 bg-gray-200 rounded-full flex items-center justify-center text-[10px] font-bold">MUI</div>
+                        <div class="h-8 w-8 bg-gray-200 rounded-full flex items-center justify-center text-[10px] font-bold">ISO</div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Support Pabrik -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-brand-accent group">
+                    <div class="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-accent transition duration-300">
+                        <i class="fas fa-industry text-brand-accent text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Support Pabrik Langsung</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Bukan makelar. Didukung <strong>HYDRO Group</strong> dengan pabrik sendiri sejak tahun 2000 (>25 tahun). Sparepart & teknisi terjamin.
+                    </p>
+                </div>
+
+                <!-- Card 3: Tanpa Royalty Fee -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-green-500 group">
+                    <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-500 transition duration-300">
+                        <i class="fas fa-percentage text-green-500 text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Tanpa Royalty Fee</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Keuntungan <strong>100% milik Anda</strong>. Peralatan adalah hak milik sepenuhnya. Tidak ada bagi hasil yang membebani.
+                    </p>
+                </div>
+
+                <!-- Card 4: Kualitas Air -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-cyan-400 group">
+                    <div class="w-16 h-16 bg-cyan-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyan-400 transition duration-300">
+                        <i class="fas fa-tint text-cyan-400 text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Kualitas Air Premium</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Teknologi <em>Water Control System</em>. Air baku pegunungan (Citiis - Cijeruk) bebas bau, warna, & bakteri.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION 3 CODE -->
+    <!-- START OF SECTION 3 CODE -->
+    <!-- Background gray-50 untuk membedakan dengan section sebelumnya -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div id="keunggulan" class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Unique Selling Proposition</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                    Kenapa Investor Memilih <span class="text-brand-blue">HYDROMART?</span>
+                </h3>
+                <div class="w-24 h-1 bg-brand-blue mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1: Legalitas -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-brand-blue group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue transition duration-300">
+                        <i class="fas fa-file-contract text-brand-blue text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Legalitas & Sertifikasi</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Aman berusaha dengan Waralaba terdaftar (WI-0016416-737), Halal MUI, dan ISO 9001:2015.
+                    </p>
+                    <!-- Logo Placeholder Area -->
+                    <div class="flex gap-2 opacity-60 grayscale hover:grayscale-0 transition">
+                        <!-- Ganti src dengan logo Halal/ISO asli nantinya -->
+                        <div class="h-8 w-8 bg-gray-200 rounded-full flex items-center justify-center text-[10px] font-bold">MUI</div>
+                        <div class="h-8 w-8 bg-gray-200 rounded-full flex items-center justify-center text-[10px] font-bold">ISO</div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Support Pabrik -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-brand-accent group">
+                    <div class="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-accent transition duration-300">
+                        <i class="fas fa-industry text-brand-accent text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Support Pabrik Langsung</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Bukan makelar. Didukung <strong>HYDRO Group</strong> dengan pabrik sendiri sejak tahun 2000 (>25 tahun). Sparepart & teknisi terjamin.
+                    </p>
+                </div>
+
+                <!-- Card 3: Tanpa Royalty Fee -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-green-500 group">
+                    <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-500 transition duration-300">
+                        <i class="fas fa-percentage text-green-500 text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Tanpa Royalty Fee</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Keuntungan <strong>100% milik Anda</strong>. Peralatan adalah hak milik sepenuhnya. Tidak ada bagi hasil yang membebani.
+                    </p>
+                </div>
+
+                <!-- Card 4: Kualitas Air -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-cyan-400 group">
+                    <div class="w-16 h-16 bg-cyan-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyan-400 transition duration-300">
+                        <i class="fas fa-tint text-cyan-400 text-2xl group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Kualitas Air Premium</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Teknologi <em>Water Control System</em>. Air baku pegunungan (Citiis - Cijeruk) bebas bau, warna, & bakteri.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION 3 CODE -->
+    <!-- START OF SECTION 4 CODE -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        
+        <!-- Background Element (Watermark Logo/Shape) -->
+        <div class="absolute -right-20 top-40 w-96 h-96 bg-brand-light rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Teknologi & Kualitas</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                    Teknologi 11 Tahap Filtrasi untuk <br/><span class="text-brand-blue">Kualitas Sempurna</span>
+                </h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Kami tidak main-main dengan kualitas. Setiap tetes air HYDROMART melewati proses ketat untuk memastikan kemurnian dan kesehatan keluarga Indonesia.
+                </p>
+            </div>
+
+            <!-- Diubah dari items-center menjadi items-start agar sejajar di atas -->
+            <div class="flex flex-col lg:flex-row gap-12 items-start">
+                
+                <!-- KOLOM KIRI: Diagram Visual SAJA -->
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-gray-50 rounded-2xl p-4 border-2 border-dashed border-brand-blue/30 relative group">
+                        <!-- Placeholder Image untuk Diagram -->
+                        <!-- Nanti diganti dengan file gambar diagram alur 11 tahap -->
+                        <div class="aspect-[1/1] rounded-xl overflow-hidden bg-white shadow-inner flex items-center justify-center relative">
+                            <img src="https://ads.hydro.co.id/wp-content/uploads/2026/03/Alur-11-tahap-Hydromart.jpg" 
+                                 alt="Diagram Filtrasi Hydromart" 
+                                 class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-500">
+                            
+                            <!-- Label Placeholder -->
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            </div>
+                        </div>
+                        
+                        <!-- Caption -->
+                        <div class="mt-4 text-center">
+                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Skema Filtrasi & Sterilisasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN: Detail Poin Teknologi -->
+                <div class="w-full lg:w-1/2">
+                    <div class="space-y-6">
+                        
+                        <!-- Item 1 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-brand-blue">
+                                    <i class="fas fa-mountain text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-gray-900">Air Baku Pegunungan (pH 8)</h4>
+                                <p class="mt-1 text-sm text-gray-600">Ditampung dalam Tangki 5000L khusus food grade untuk menjaga kesegaran alami.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-brand-blue">
+                                    <i class="fas fa-filter text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-gray-900">Double Filtration (Hydro 6000)</h4>
+                                <p class="mt-1 text-sm text-gray-600">Sistem penyaringan ganda untuk menjernihkan air dari partikel fisik secara maksimal.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-brand-blue">
+                                    <i class="fas fa-shield-virus text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-gray-900">Tangki Stainless Steel</h4>
+                                <p class="mt-1 text-sm text-gray-600">Material anti lumut dan anti karat untuk menjaga kemurnian air jangka panjang.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-brand-blue">
+                                    <i class="fas fa-microscope text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-gray-900">Micron Filtration</h4>
+                                <p class="mt-1 text-sm text-gray-600">Teknologi penyaringan partikel mikroskopis untuk hasil air yang jernih kristal.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-100 text-purple-600">
+                                    <i class="fas fa-sun text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-gray-900">Ultra Violet (UV) Sterilizer</h4>
+                                <p class="mt-1 text-sm text-gray-600">Membunuh tuntas bakteri dan kuman berbahaya tanpa bahan kimia.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 (Highlighted) -->
+                        <div class="flex bg-brand-light p-4 rounded-xl border border-blue-200 shadow-sm">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-accent text-white shadow-md">
+                                    <i class="fas fa-pump-soap text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg leading-6 font-bold text-brand-dark">Pencucian Galon Otomatis</h4>
+                                <p class="mt-1 text-sm text-gray-700">Dilengkapi sikat mesin dan <span class="font-bold text-red-500">Hot Water Steam (Uap Panas)</span> untuk sterilisasi maksimal galon konsumen.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BARIS BAWAH: Video YouTube (Lebih Lebar) -->
+            <div class="mt-16 max-w-5xl mx-auto">
+                <div id="video-outlet" class="bg-brand-dark rounded-xl p-2 shadow-xl overflow-hidden relative group transform hover:scale-[1.01] transition duration-300">
+                    <div class="aspect-video bg-gray-900 relative flex items-center justify-center rounded-lg overflow-hidden">
+                        <iframe 
+                            class="absolute inset-0 w-full h-full z-20" 
+                            src="https://www.youtube.com/embed/DOrNQCzdVpE" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END OF SECTION 4 CODE -->
+    <!-- START OF SECTION 5 CODE -->
+    <section id="paket" class="py-20 bg-brand-light/30 border-t border-brand-blue/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                
+                <!-- LEFT COLUMN: Intro & Selling Point -->
+                <div class="w-full lg:w-5/12">
+                    <h2 class="text-brand-profit font-bold uppercase tracking-wider text-sm mb-3">
+                        <i class="fas fa-chart-line mr-2"></i>Business Projection
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                        Hitungan Bisnis yang <br/><span class="text-brand-blue">Masuk Akal & Menguntungkan</span>
+                    </h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Dengan harga jual <span class="font-bold text-brand-dark bg-yellow-100 px-2 rounded">Rp 7.000/galon</span> (sangat hemat dibanding AMDK bermerek), margin keuntungan Anda tetap tinggi!
+                    </p>
+
+                    <!-- BEP Info Card -->
+                    <div class="bg-white border-l-4 border-brand-accent p-6 shadow-md rounded-r-xl">
+                        <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                            <i class="fas fa-hourglass-half text-brand-accent mr-2"></i> Estimasi Balik Modal (BEP)
+                        </h4>
+                        <p class="text-brand-dark font-bold text-2xl mb-1">15 - 36 Bulan</p>
+                        <p class="text-sm text-gray-500 italic">
+                            *Berdasarkan studi kasus mitra Pekayon, BEP bisa dicapai lebih cepat dengan penjualan >200 galon/hari.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Calculation Card -->
+                <div class="w-full lg:w-7/12 relative">
+                    <!-- Background Blob decoration -->
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse"></div>
+
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 relative z-10">
+                        <!-- Card Header -->
+                        <div class="bg-brand-dark p-6 text-xl text-white text-center">
+                            <h4 class="text-white font-bold">Simulasi Potensi Keuntungan Bulanan</h4>
+                            <p class="text-blue-200 text-sm">Asumsi Penjualan Rata-rata: 150 Galon/hari</p>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-8">
+                            <!-- Omzet -->
+                            <div class="flex justify-between items-center mb-4 pb-4 border-b border-gray-100">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-brand-blue mr-4">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-500 text-sm">Omzet Bulanan</p>
+                                        <p class="text-xs text-gray-400">(150 galon x Rp 7.000 x 30 hari)</p>
+                                    </div>
+                                </div>
+                                <span class="text-xl font-bold text-gray-800">Rp 31.500.000</span>
+                            </div>
+
+                            <!-- Biaya Operasional -->
+                            <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-500 mr-4">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-500 text-sm">Biaya Operasional</p>
+                                        <p class="text-xs text-gray-400">(Gaji, Listrik, Air Baku, dll)</p>
+                                    </div>
+                                </div>
+                                <span class="text-xl font-bold text-red-500">- Rp 10.000.000</span>
+                            </div>
+
+                            <!-- Profit Bersih (Highlight) -->
+                            <div class="bg-green-50 rounded-xl p-6 border border-green-200 text-center transform scale-100 hover:scale-105 transition duration-300">
+                                <p class="text-green-600 font-semibold uppercase tracking-widest text-sm mb-2">Profit Bersih / Bulan</p>
+                                <h2 class="text-4xl md:text-5xl font-extrabold text-green-600">
+                                    Rp 21.500.000<span class="text-lg text-green-500 align-top">*</span>
+                                </h2>
+                            </div>
+
+                            <!-- Disclaimer kecil -->
+                            <p class="text-center text-xs text-gray-400 mt-4">
+                                *Angka ini adalah estimasi. Hasil aktual dapat bervariasi tergantung lokasi dan manajemen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION 5 CODE -->
+    <!-- START OF SECTION 6: PAKET USAHA (ELEMENTOR VERSION) -->
+<section class="py-16 md:py-20 bg-white font-sans" id="paket-usaha">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+            <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Paket Rekomendasi</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">Paket Franchise <br/><span class="text-brand-blue">Eksklusif (All-In)</span></h3>
+            <p class="text-gray-600 px-4">
+                Solusi bisnis terima beres. Mulai dari sistem air kelas pabrikan hingga dukungan operasional dan marketing digital.
+            </p>
+        </div>
+
+        <!-- Single Horizontal Pricing Card -->
+        <div class="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] overflow-hidden border border-gray-100 flex flex-col lg:flex-row max-w-6xl mx-auto">
+            
+            <!-- Kiri: Detail Fitur (2/3 width pada desktop) -->
+            <div class="w-full lg:w-2/3 p-8 md:p-10 lg:p-12">
+                <div class="flex items-center justify-between mb-8 border-b border-gray-100 pb-4">
+                    <h4 class="text-2xl font-bold text-gray-900">Rincian Fasilitas & Dukungan</h4>
+                    <span class="hidden md:inline-block bg-blue-50 text-brand-blue px-3 py-1 rounded-full text-sm font-semibold">Siap Operasi</span>
+                </div>
+
+                <!-- Grid 2 Kolom untuk 4 Kategori Fitur -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                    
+                    <!-- Kategori 1 -->
+                    <div>
+                        <h5 class="flex items-center font-bold text-gray-900 mb-4 text-lg">
+                            <i class="fas fa-cogs text-brand-blue mr-3 text-xl w-6"></i> Peralatan Utama
+                        </h5>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Penyimpanan:</strong> 2x Tangki Excel 5200L & 1x Tangki Stainless 1500L.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Sistem Air:</strong> Pompa Nochi JT 250, Filter HYDRO 6000, Housing Sedimen.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Higienitas:</strong> UV Sterilight, Pemanas Ariston, Sikat Cuci Galon, Sertifikat Lab.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Infrastruktur:</strong> Lemari Stainless (3x2m), instalasi pipa food grade & listrik.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kategori 2 -->
+                    <div>
+                        <h5 class="flex items-center font-bold text-gray-900 mb-4 text-lg">
+                            <i class="fas fa-bullhorn text-brand-blue mr-3 text-xl w-6"></i> Identitas Visual
+                        </h5>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Billboard Hydromart</strong> raksasa ukuran 5x2 Meter.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Neon Box</strong> ukuran 2x1 Meter beserta tiang setinggi 4 Meter.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Atribut Karyawan:</strong> 6 unit seragam resmi (Kaos HYDROMART).</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kategori 3 -->
+                    <div>
+                        <h5 class="flex items-center font-bold text-gray-900 mb-4 text-lg">
+                            <i class="fas fa-clipboard-list text-brand-blue mr-3 text-xl w-6"></i> Dukungan Operasional
+                        </h5>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Stok Awal:</strong> 10 Galon Kosong Aqua, 1000 set Tutup & Tisu, dan Air Baku.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Pelatihan & SOP:</strong> Training komprehensif untuk pemilik dan karyawan.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Mentoring:</strong> Pendampingan usaha bisnis secara berkelanjutan dari pusat.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kategori 4 -->
+                    <div>
+                        <h5 class="flex items-center font-bold text-gray-900 mb-4 text-lg">
+                            <i class="fas fa-rocket text-brand-blue mr-3 text-xl w-6"></i> Strategi Digital Marketing
+                        </h5>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Aset Digital:</strong> Setup akun Google Maps/GMB, Instagram, dan Facebook.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Branding Sinkronisasi:</strong> Dukungan eksposur dari Instagram Pusat.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i> 
+                                <span><strong>Promosi Lokal:</strong> Dukungan promosi khusus untuk menguasai area sekitar.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Kanan: Harga & CTA (1/3 width pada desktop) -->
+            <!-- Ubah bg-brand-dark menjadi bg-black di baris bawah ini -->
+            <div class="w-full lg:w-1/3 bg-black text-white p-8 md:p-10 lg:p-12 relative flex flex-col justify-center overflow-hidden">
+                <!-- Efek background dekoratif -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-brand-blue rounded-full opacity-50 blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-brand-accent rounded-full opacity-20 blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10">
+                    <div class="inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full text-brand-accent text-sm font-bold uppercase tracking-widest mb-6">
+                        <i class="fas fa-star mr-1"></i> Highly Recommended
+                    </div>
+                    
+                    <p class="text-blue-200 font-medium mb-1">Nilai Investasi (All-In)</p>
+                    <div class="flex items-start mb-6 border-b border-white/10 pb-6">
+                        <span class="text-2xl font-bold text-brand-accent mt-2 mr-1">Rp</span>
+                        <span class="text-5xl md:text-6xl font-extrabold text-white tracking-tighter">388<span class="text-3xl font-bold">Jt</span></span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-sm text-blue-100">
+                        <li class="flex items-center">
+                            <i class="fas fa-shield-alt text-green-400 mr-3 text-lg"></i> Hak Milik Sepenuhnya
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-hand-holding-usd text-green-400 mr-3 text-lg"></i> Tanpa Potongan Royalty Fee
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-truck-loading text-green-400 mr-3 text-lg"></i> Gratis Instalasi & Setup
+                        </li>
+                    </ul>
+
+                    <!-- Form Lead Generator dengan Integrasi Google Sheets -->
+                    <form id="franchiseForm" class="space-y-3 mb-4">
+                        <div>
+                            <!-- Ubah bg, border, text, dan placeholder -->
+                            <input type="text" id="inputNama" name="nama" placeholder="Nama Lengkap" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-accent transition text-sm shadow-sm">
+                        </div>
+                        <div>
+                            <!-- Ubah bg, border, text, dan placeholder -->
+                            <input type="tel" id="inputWA" name="whatsapp" placeholder="No. WhatsApp" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-accent transition text-sm shadow-sm">
+                        </div>
+                        <div>
+                            <!-- Ubah bg, border, text, dan placeholder -->
+                            <input type="text" id="inputLokasi" name="lokasi" placeholder="Kota / Lokasi Ruko" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-accent transition text-sm shadow-sm">
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="track-wa-btn block w-full py-4 px-6 bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold text-center rounded-xl shadow-[0_10px_20px_rgba(245,158,11,0.3)] transition duration-300 transform hover:-translate-y-1 text-lg mt-2">
+                            Jadwalkan Konsultasi
+                        </button>
+                    </form>
+
+                    <p class="text-center text-xs text-white/50">Hubungi kami untuk ketersediaan wilayah.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 text-sm mb-4">Butuh penawaran khusus atau paket custom sesuai ukuran ruko?</p>
+            <a href="https://wa.me/6281110014716" target="_blank" class="text-brand-blue font-semibold hover:underline flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2 text-xl text-green-500"></i> Hubungi Konsultan Kami
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- END OF SECTION 6 -->
+
+<!-- SCRIPT INTEGRASI GOOGLE SHEETS & WHATSAPP -->
+<!-- Pastikan script ini diletakkan di dalam widget yang sama, tepat di bawah kode section di atas -->
+<script>
+    document.getElementById('franchiseForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah halaman refresh
+        
+        // --- START TRACKING META PIXEL (INITIATE CHECKOUT) ---
+        // Cek apakah user ini sudah submit sebelumnya (Anti-Spam/Deduplikasi)
+        var hasTracked = localStorage.getItem('pixel_wa_clicked');
+        if (!hasTracked) {
+            var timestamp = new Date().getTime();
+            var randomNum = Math.floor(Math.random() * 1000000);
+            var uniqueEventID = 'evt_' + timestamp + '_' + randomNum;
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Paket Franchise All-In',
+                    value: 388000000,
+                    currency: 'IDR'
+                }, {
+                    eventID: uniqueEventID
+                });
+                
+                // Berikan stempel agar submit berikutnya tidak dihitung ganda
+                localStorage.setItem('pixel_wa_clicked', 'true');
+                console.log("Meta Pixel: 'InitiateCheckout' dikirim. EventID: " + uniqueEventID);
+            } else {
+                console.warn("Meta Pixel: Base code belum termuat.");
+            }
+        }
+        // --- END TRACKING META PIXEL ---
+
+        var btn = document.getElementById('submitBtn');
+        var originalText = btn.innerHTML;
+        
+        // Ubah teks tombol saat memproses
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
+        btn.disabled = true;
+
+        // Ambil data dari form
+        var nama = document.getElementById('inputNama').value;
+        var wa = document.getElementById('inputWA').value;
+        var lokasi = document.getElementById('inputLokasi').value;
+
+        // URL Google Apps Script yang Anda miliki
+        var scriptURL = 'https://script.google.com/macros/s/AKfycbzUi6jdJ6JNX5Akz1wK4ceJLnI2EsBWVpebevzYAwTKI06MsavKuQt4I8F79JCK-ts_/exec';
+        
+        var formData = new FormData();
+        formData.append('nama', nama);
+        formData.append('whatsapp', wa);
+        formData.append('lokasi', lokasi);
+
+        // Kirim data ke Google Sheets
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                // Jika sukses mencatat, siapkan format pesan ke WA
+                var textWA = "Halo Tim Hydromart. Saya " + nama + ", berminat franchise. Lokasi ruko saya di " + lokasi + ". Saya ingin jadwalkan konsultasi lebih lanjut.";
+                var waURL = "https://wa.me/6281110014716?text=" + encodeURIComponent(textWA);
+                
+                // Buka WhatsApp di tab baru
+                window.open(waURL, '_blank');
+                
+                // Kembalikan form seperti semula
+                document.getElementById('franchiseForm').reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                
+                // Fallback: Jika internet bermasalah/gagal simpan ke sheet, tetap arahkan ke WA
+                var fallbackURL = "https://wa.me/6281110014716?text=Halo%20Tim%20Hydromart,%20saya%20ingin%20jadwalkan%20konsultasi%20franchise.";
+                window.open(fallbackURL, '_blank');
+                
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            });
+    });
+</script>
+<!-- START OF SECTION 7 CODE -->
+    <section class="py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Kisah Sukses</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                    Bergabunglah dengan <span class="text-brand-blue">42+ Mitra Sukses</span> Kami
+                </h3>
+                <p class="text-gray-600">
+                    Bukti nyata dari mereka yang sudah membuktikan profitabilitas Hydromart.
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                
+                <!-- Testimonial 1: Pak Dedi -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg relative border-t-4 border-brand-blue flex flex-col h-full group">
+                    <!-- Quote Icon -->
+                    <div class="absolute top-4 right-8 text-6xl text-gray-100 font-serif leading-none">"</div>
+                    
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=200&auto=format&fit=crop" 
+                             alt="Pak Dedi" 
+                             class="w-16 h-16 rounded-full object-cover border-2 border-brand-blue p-1 mr-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Pak Dedi</h4>
+                            <p class="text-sm text-gray-500"><i class="fas fa-map-marker-alt text-brand-accent mr-1"></i> Mitra Bekasi</p>
+                            <div class="text-brand-accent text-xs mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="text-xl font-bold text-brand-dark mb-3">"Pensiun Tenang, Omzet Stabil"</h5>
+                    <p class="text-gray-600 italic leading-relaxed mb-6 flex-grow">
+                        "Saya pensiun dari BUMN dan mulai usaha HYDROMART. Awalnya coba-coba, tapi ternyata sistemnya sangat matang. Sekarang sudah <strong class="text-brand-blue">BEP dalam 14 bulan</strong> dan omzet stabil untuk hari tua."
+                    </p>
+
+                    <!-- Dokumentasi Pemasangan -->
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="text-xs text-gray-400 mb-2 font-semibold uppercase">Dokumentasi Outlet:</p>
+                        <div class="rounded-lg overflow-hidden w-full relative aspect-[3/4]">
+                            <img src="https://ads.hydro.co.id/wp-content/uploads/2026/02/hydromart-jatibening-samping.jpg" 
+                                 alt="Outlet Pak Dedi Bekasi" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                            <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded">
+                                Bekasi, Jawa Barat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2: Bu Rini -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg relative border-t-4 border-brand-accent flex flex-col h-full group">
+                    <!-- Quote Icon -->
+                    <div class="absolute top-4 right-8 text-6xl text-gray-100 font-serif leading-none">"</div>
+                    
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" 
+                             alt="Bu Rini" 
+                             class="w-16 h-16 rounded-full object-cover border-2 border-brand-accent p-1 mr-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Bu Rini</h4>
+                            <p class="text-sm text-gray-500"><i class="fas fa-map-marker-alt text-brand-accent mr-1"></i> Mitra Sragen</p>
+                             <div class="text-brand-accent text-xs mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="text-xl font-bold text-brand-dark mb-3">"Support Pusat Sangat Solid"</h5>
+                    <p class="text-gray-600 italic leading-relaxed mb-6 flex-grow">
+                        "Awalnya ragu karena lokasi saya jauh, tapi support tim pusat sangat solid. Teknisi rutin datang untuk maintenance. Karena puas dengan hasilnya, <strong class="text-brand-accent">saya sekarang sudah buka cabang ke-2!</strong>"
+                    </p>
+
+                    <!-- Dokumentasi Pemasangan -->
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="text-xs text-gray-400 mb-2 font-semibold uppercase">Dokumentasi Outlet:</p>
+                        <div class="rounded-lg overflow-hidden w-full relative aspect-[3/4]">
+                            <img src="https://ads.hydro.co.id/wp-content/uploads/2026/02/hydromart-perumnas-samping-2.jpg" 
+                                 alt="Outlet Bu Rini Sragen" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                             <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded">
+                                Sragen, Jawa Tengah
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Locations / Map Section -->
+            <div class="bg-brand-dark rounded-3xl p-8 md:p-12 relative overflow-hidden text-center md:text-left mb-16">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Indonesia_provinces_blank_map.svg/2560px-Indonesia_provinces_blank_map.svg.png" 
+                     alt="Peta Indonesia" 
+                     class="absolute top-0 right-0 h-full w-full md:w-2/3 object-cover opacity-10 mix-blend-overlay">
+
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-8 md:mb-0 md:max-w-xl">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                            Siap Melayani di Berbagai Kota
+                        </h3>
+                        <p class="text-blue-200 mb-6">
+                            Jaringan Hydromart terus berkembang. Kami hadir dekat dengan Anda untuk memastikan kualitas air terbaik.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Jakarta</span>
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Bekasi</span>
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Depok</span>
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Bogor</span>
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Tangerang</span>
+                            <span class="bg-white/10 text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition cursor-default">Jawa Tengah</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#" class="bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 flex items-center">
+                            <i class="fas fa-search-location mr-2"></i> Cek Lokasi Terdekat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION 7 CODE -->
+
+    <!-- START OF SECTION 8 CODE -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-brand-accent font-bold uppercase tracking-wider text-sm mb-3">Tanya Jawab</h2>
+                <h3 class="text-3xl font-bold text-gray-900">Pertanyaan Umum (FAQ)</h3>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <details class="group bg-gray-50 rounded-xl overflow-hidden transition-all duration-300 open:bg-white open:shadow-lg open:ring-1 open:ring-brand-blue/20">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none">
+                        <h4 class="font-bold text-gray-900 group-hover:text-brand-blue transition">Siapa yang cocok menjalankan bisnis ini?</h4>
+                        <span class="ml-4 flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition">
+                            <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                        Sangat cocok untuk <strong>pensiunan</strong>, pegawai yang ingin <em>passive income</em>, atau Anda yang memiliki ruko/lokasi strategis dan ingin usaha tanpa ribet manajemen yang rumit.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="group bg-gray-50 rounded-xl overflow-hidden transition-all duration-300 open:bg-white open:shadow-lg open:ring-1 open:ring-brand-blue/20">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none">
+                        <h4 class="font-bold text-gray-900 group-hover:text-brand-blue transition">Apakah saya harus mengelola sendiri?</h4>
+                        <span class="ml-4 flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition">
+                            <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                        <p class="mb-2">Anda memiliki fleksibilitas penuh:</p>
+                        <ul class="list-disc ml-5 space-y-1">
+                            <li><strong>Operasional Sendiri:</strong> Keuntungan 100% milik Anda.</li>
+                            <li><strong>Kerjasama Pengelolaan:</strong> Bekerjasama dengan manajemen pusat jika Anda tidak memiliki waktu untuk mengelola harian.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-gray-50 rounded-xl overflow-hidden transition-all duration-300 open:bg-white open:shadow-lg open:ring-1 open:ring-brand-blue/20">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none">
+                        <h4 class="font-bold text-gray-900 group-hover:text-brand-blue transition">Bagaimana jika ada kerusakan mesin?</h4>
+                        <span class="ml-4 flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition">
+                            <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                        Jangan khawatir. Kami memberikan <strong>layanan purna jual (after-sales service)</strong> yang didukung oleh teknisi ahli. Ketersediaan spare part sangat terjamin karena kami memiliki pabrik perakitan sendiri di Indonesia (HYDRO Group).
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- END OF SECTION 8 CODE -->
+    <!-- START OF SECTION 9: FINAL CTA (ELEMENTOR CUSTOM HTML) -->
+<section class="py-20 bg-gradient-to-br from-brand-blue to-brand-dark relative overflow-hidden text-center font-sans">
+    
+    <!-- Dekorasi Background -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />
+        </svg>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Siap Memiliki Bisnis Kebutuhan Pokok yang <span class="text-brand-accent">Tahan Lama?</span>
+        </h2>
+        <p class="text-blue-100 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+            Jangan biarkan lokasi strategis Anda menganggur. Ambil peluang sekarang dan jadilah penguasa pasar di kota Anda.
+        </p>
+    <!-- Tambahan Foto Profil/Tim -->
+            <img src="https://ads.hydro.co.id/wp-content/uploads/2026/03/Foto-Armel-Web.png" alt="Tim Konsultan" class="block mx-auto rounded-full object-cover border-4 border-brand-accent mb-4 shadow-lg" style="width: 250px !important; height: 250px !important; border-radius: 50% !important;">
+            
+            <p class="text-white text-sm font-medium">Hubungi Tim Konsultan Kami:</p>
+            <div class="flex items-center justify-center mt-2 mb-4 text-xl font-bold text-white">
+                Armelia : 
+                <a href="tel:0811-1001-4716" class="ml-2 hover:text-brand-accent transition duration-300">0811-1001-4716</a>
+            </div>
+        </div>
+        
+        <div class="flex flex-col items-center justify-center gap-4">
+            <a href="https://wa.me/6281110014716?text=Halo%20Armelia,%20saya%20tertarik%20menjadi%20mitra%20Hydromart." target="_blank" class="track-wa-btn group relative inline-flex items-center justify-center px-8 py-5 text-xl font-bold text-white transition-all duration-200 bg-green-500 font-pj rounded-full hover:bg-green-600 shadow-2xl transform hover:-translate-y-1">
+                <!-- Efek Denyut (Ping) -->
+                
+                
+                <i class="fab fa-whatsapp text-3xl mr-3"></i> Chat WhatsApp Sekarang
+            </a>
+            <p class="text-white/60 text-sm mt-2">Respon Cepat (Online)</p>
+        </div>
+    </div>
+</section>
+<!-- END OF SECTION 9 -->
+
+<!-- START OF FOOTER (ELEMENTOR CUSTOM HTML) -->
+<footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- Brand Info -->
+            <div class="col-span-1 lg:col-span-1">
+                <a href="#">
+    <img src="https://raw.githubusercontent.com/gerryramdani-star/nextool/refs/heads/main/asset/logo-hydromart-(1).png" alt="Logo Hydromart" class="object-contain" style="height: 55px !important; width: auto !important; max-width: 250px !important; margin: 0; margin-bottom: 20px;">
+</a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Penyedia solusi bisnis air minum isi ulang terpercaya dengan dukungan penuh dari HYDRO Group.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com/AirSehatHidupSehat" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-blue transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hydro.filterair/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hydrofilterair" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6 border-b border-white-700 pb-2 inline-block">Menu Cepat</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li><a href="#keunggulan" class="hover:text-brand-accent transition"><i class="fas fa-chevron-right text-xs mr-2"></i> Keunggulan</a></li>
+                    <li><a href="#teknologi" class="hover:text-brand-accent transition"><i class="fas fa-chevron-right text-xs mr-2"></i> Teknologi</a></li>
+                    <li><a href="#paket-usaha" class="hover:text-brand-accent transition"><i class="fas fa-chevron-right text-xs mr-2"></i> Paket Usaha</a></li>
+                    <li><a href="#faq" class="hover:text-brand-accent transition"><i class="fas fa-chevron-right text-xs mr-2"></i> FAQ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                <h4 class="text-white font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Kantor Pusat</h4>
+                <ul class="space-y-4 text-sm text-gray-400">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-accent text-lg"></i>
+                        <span>
+                            <strong>PT HYDRO Teknologi Internasional </strong><br>
+                            Ruko Inkopal, Jl. Boulevard Barat Raya No 31, Blok C, Kelapa Gading Barat,<br>
+                            Kec. Kelapa Gading, Jakarta Utara, Daerah Khusus Jakarta 14240
+                        </span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-brand-accent"></i>
+                        <span>0811-1001-4716</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-brand-accent"></i>
+                        <span>marketing@hydro.co.id</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- START FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/6281110014716?text=Halo%20Armelia,%20saya%20tertarik%20menjadi%20mitra%20Hydromart." 
+   target="_blank" 
+   class="track-wa-btn fixed bottom-6 right-6 z-[9999] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_10px_20px_rgba(37,211,102,0.5)] transition-all duration-300 hover:bg-[#1ebe57] hover:-translate-y-1 hover:scale-110 group">
+    
+    <!-- Icon WhatsApp -->
+    <i class="fab fa-whatsapp text-4xl"></i>
+    
+    <!-- Efek titik merah (seolah ada pesan masuk) -->
+    <span class="absolute top-0 right-0 w-4 h-4 bg-red-500 border-2 border-white rounded-full animate-ping opacity-75"></span>
+    <span class="absolute top-0 right-0 w-4 h-4 bg-red-500 border-2 border-white rounded-full"></span>
+</a>
+<!-- END FLOATING WHATSAPP BUTTON -->
+        
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p class="mb-4 md:mb-0 text-center md:text-left">
+                &copy; 2024 HYDROMART - PT HYDRO Teknologi Internasional . All Rights Reserved.
+            </p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Cari semua tombol yang memiliki class 'track-wa-btn'
+    var waButtons = document.querySelectorAll('.track-wa-btn');
+
+    waButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            
+            // 2. Cek apakah user ini sudah punya "stempel" di browsernya
+            var hasClicked = localStorage.getItem('pixel_wa_clicked');
+
+            if (!hasClicked) {
+                // 3. Jika belum klik, tembakkan event Pixel
+                if (typeof fbq === 'function') {
+                    
+                    // --- BAGIAN YANG DIUBAH ---
+                    // Mengganti event menjadi 'InitiateCheckout'
+                    fbq('track', 'InitiateCheckout');
+                    
+                    // 4. Berikan stempel agar klik berikutnya tidak dihitung
+                    localStorage.setItem('pixel_wa_clicked', 'true');
+                    
+                    console.log("Meta Pixel: Event 'InitiateCheckout' berhasil direkam (First Click).");
+                } else {
+                    console.warn("Meta Pixel: Base code belum termuat atau diblokir adblocker.");
+                }
+            } else {
+                // Jika sudah klik sebelumnya, biarkan saja
+                console.log("Meta Pixel: Klik diabaikan karena user sudah terhitung sebelumnya.");
+            }
+        });
+    });
+});
+</script>
